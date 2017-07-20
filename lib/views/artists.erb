@@ -1,0 +1,8 @@
+<h2>Artist <%= params[:id]%> Albums</h2>
+<ol>
+  <% @albums.each do |album| %>
+  <li>
+    <a href = "albums/<%=album[1]%>"><%= album[0] %></a>
+  </li>
+  <% end %>
+</ol>
